@@ -1,0 +1,51 @@
+
+/* =================================
+   APP LAYOUT
+================================= */
+
+.app-shell {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  background: var(--background);
+  color: var(--text-primary);
+}
+
+/* =================================
+   SECTION LAYOUT
+================================= */
+
+.portfolio-section {
+  position: relative;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* =================================
+   FOOTER
+================================= */
+
+.portfolio-footer {
+  padding: 28px 20px;
+  background: #176985;
+  color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+  font-size: 14px;
+}
+
+.portfolio-footer span {
+  color: #FBCC23;
+  font-weight: 700;
+}
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 768px) {
+  .portfolio-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
