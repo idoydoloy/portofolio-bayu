@@ -16,7 +16,6 @@ export default function Hero() {
 
       {/* BACKGROUND DECORATION */}
       <div className="absolute top-32 right-[-100px] w-80 h-80 bg-[#2283A6]/10 rounded-full blur-3xl" />
-
       <div className="absolute bottom-10 left-[-100px] w-72 h-72 bg-[#FABE07]/10 rounded-full blur-3xl" />
 
       <div className="
@@ -37,7 +36,6 @@ export default function Hero() {
             rounded-full mb-6 sm:mb-7
           ">
             <span className="w-2 h-2 bg-[#FABE07] rounded-full animate-pulse" />
-
             <span className="text-xs sm:text-sm font-bold text-[#2283A6]">
               Welcome to My Portfolio
             </span>
@@ -83,43 +81,64 @@ export default function Hero() {
 
           {/* BUTTONS */}
           <div className="
-            flex flex-col min-[380px]:flex-row
+            flex flex-col sm:flex-row flex-wrap
             justify-center lg:justify-start
             gap-3 sm:gap-4
           ">
 
+            {/* PROJECT BUTTON */}
             <a
               href="#projects"
               className="
-                w-full min-[380px]:w-auto
+                w-full sm:w-auto
                 inline-flex items-center justify-center gap-2
-                px-5 sm:px-7 py-3.5 sm:py-4
+                px-5 sm:px-6 py-3.5
                 bg-[#2283A6] text-white
-                rounded-xl font-bold text-sm sm:text-base
+                rounded-xl font-bold text-sm
                 shadow-lg shadow-[#2283A6]/20
                 hover:bg-[#196985] hover:-translate-y-1
                 transition-all duration-300
               "
             >
               Lihat Project
-              <ArrowUpRight size={19} />
+              <ArrowUpRight size={18} />
             </a>
 
+            {/* DOWNLOAD CV BUTTON */}
+            <a
+              href="/CV-Bayu-Saputra.pdf"
+              download="CV-Bayu-Saputra.pdf"
+              className="
+                w-full sm:w-auto
+                inline-flex items-center justify-center gap-2
+                px-5 sm:px-6 py-3.5
+                bg-[#FABE07] text-[#172B35]
+                rounded-xl font-bold text-sm
+                shadow-lg shadow-[#FABE07]/20
+                hover:bg-[#E5AA00] hover:-translate-y-1
+                transition-all duration-300
+              "
+            >
+              Download CV
+              <Download size={18} />
+            </a>
+
+            {/* CONTACT BUTTON */}
             <a
               href="#contact"
               className="
-                w-full min-[380px]:w-auto
+                w-full sm:w-auto
                 inline-flex items-center justify-center gap-2
-                px-5 sm:px-7 py-3.5 sm:py-4
+                px-5 sm:px-6 py-3.5
                 bg-white border border-[#DCE9EC]
                 text-[#2283A6] rounded-xl
-                font-bold text-sm sm:text-base
+                font-bold text-sm
                 hover:border-[#2283A6] hover:-translate-y-1
                 transition-all duration-300
               "
             >
               Hubungi Saya
-              <Download size={18} />
+              <ArrowUpRight size={18} />
             </a>
 
           </div>
@@ -137,7 +156,7 @@ export default function Hero() {
         </div>
 
         {/* RIGHT VISUAL - HIDDEN ON MOBILE */}
-          <div className="hidden lg:flex relative justify-center items-center">
+        <div className="hidden lg:flex relative justify-center items-center">
 
           {/* OUTER CIRCLE */}
           <div className="
@@ -242,7 +261,6 @@ export default function Hero() {
             </div>
 
           </div>
-
         </div>
 
       </div>
